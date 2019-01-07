@@ -1,0 +1,3 @@
+pushd %~dp0
+start /wait powershell.exe -ExecutionPolicy Unrestricted -File %~dp0
+popd

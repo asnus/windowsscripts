@@ -1,0 +1,33 @@
+16:26:02:592 2017.07.18 AutoPico 16.1.0.0
+Official Site: 
+http://forums.mydigitallife.info/forums/51-KMS-tools
+KMSpico v10.2.0
+Time Start: 2017/7/18 16:26:02
+
+16:26:02:592 Checking Internet Connection...
+16:26:02:701 Windows Detected: Windows Server 2008 R2 Datacenter : ServerDatacenter : 6.1 : 7601
+16:26:02:717 Using host Local: 127.95.85.139:1688
+16:26:02:732 Opening Firewall Port...
+16:26:02:764 Opening Firewall App...
+16:26:02:795 KMSEmulator Port: 1688
+16:26:02:795 Get Registry : SYSTEM\CurrentControlSet\Services\sppsvc:Start
+16:26:02:795 KMSEmulator running port: 1688
+16:26:02:826 Office 2013 Skipped
+16:26:02:826 Office 2010 Skipped
+16:26:02:842 Office 2016 Skipped
+16:26:02:842 Loading OEM Key Dumper...
+16:26:02:842 None MSDM table found
+16:26:02:966 Found Windows Products: 1
+16:26:02:966 Name: Windows Server(R), ServerDatacenter edition
+Description: Windows Operating System - Windows Server(R), RETAIL channel
+GracePeriodRemaining: 36000
+LicenseStatus: 2
+PartialProductKey: H9CR9
+
+16:26:02:966 This Windows Server(R), ServerDatacenter edition has a RETAIL/MAK KEY, if you wish activate it with KMS, then install a GVLK KEY
+16:26:02:966 This Windows Server(R), ServerDatacenter edition it is not supported by KMS activation
+16:26:02:966 Version Windows Skipped
+16:26:02:966 Closing Firewall Port...
+16:26:02:998 Closing Firewall App...
+16:26:03:013 Set Registry : HKEY_CURRENT_USER\Control Panel\Desktop:PaintDesktopVersion
+16:26:03:029 Time Finish: 2017/7/18 16:26:03

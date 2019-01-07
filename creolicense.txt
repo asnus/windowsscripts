@@ -1,0 +1,29 @@
+rem ---生成Creo2.0、ProE5.0、Isodraw7.3的License
+if exist C:\PTC\License\license-Creo2.0.dat del C:\PTC\License\license-Creo2.0.dat
+if exist C:\PTC\License\license-Pro5.0.dat del C:\PTC\License\license-Pro5.0.dat
+if exist C:\PTC\License\license-Isodraw.dat del C:\PTC\License\license-Isodraw.dat
+if exist C:\PTC\License\isodraw.dat del C:\PTC\License\isodraw.dat
+
+setlocal enabledelayedexpansion
+getmac | findstr /NIB "..-..-..-..-..-.." >C:\PTC\License\mac.txt
+type C:\PTC\License\mac.txt | findstr /B "[1-9]:" >C:\PTC\License\mac1.txt
+for /f "tokens=2 delims=:" %%i in (C:\PTC\License\mac1.txt) do for /f "delims= " %%j in ("%%i") do echo %%j >C:\PTC\License\mac2.txt
+for /f  "tokens=*" %%k in (Z:\02-License\license-Creo2.0.dat) do (
+for /f %%m in (C:\PTC\License\mac2.txt) do (
+set a=%%k
+set b=!a:00-00-00-00-00-00=%%m!
+echo !b! >>C:\PTC\License\license-Creo2.0.dat
+)
+)
+
+for /f  "tokens=*" %%k in (Z:\02-License\license-Isodraw.dat) do (
+for /f %%m in (C:\PTC\License\mac2.txt) do (
+set a=%%k
+set b=!a:00-00-00-00-00-00=%%m!
+echo !b! >>C:\PTC\License\isodraw.dat
+)
+)
+
+del C:\PTC\License\mac*.txt
+endlocal
+echo Creo2.0、Isodraw7.3的License已成功生成
